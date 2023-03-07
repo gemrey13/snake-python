@@ -8,7 +8,7 @@ class Field:
     def __init__(self, size):
         self.size = size
         self.icons = {
-            0: '   ',
+            0: ' . ',
             1: ' * ',
             2: ' X ',
             3: ' & ',
@@ -172,7 +172,7 @@ def main(screen):
     screen.timeout(0)
 
     # Init snake & field
-    field = Field(10)
+    field = Field(13)
     snake = Snake("Joe")
     snake.set_field(field)
 
